@@ -1,91 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Nirala Medicos - Trusted pharmacy in Shahjahanpur, Uttar Pradesh. Genuine allopathic medicines and quality care.">
-<title>Nirala Medicos | Medical Store in Shahjahanpur</title>
-<style>
-:root{--blue:#063b78;--green:#4c9f20;--light:#f5faf7;--text:#17324d}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
-a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e6edf2;display:flex;align-items:center;justify-content:space-between;padding:12px 6%;box-shadow:0 2px 12px #0000000b}
-.nav img{width:155px;height:auto}.navlinks{display:flex;gap:24px;font-weight:700;color:var(--blue)}.btn{display:inline-block;padding:12px 20px;border-radius:28px;font-weight:700;background:var(--blue);color:#fff}.btn.green{background:var(--green)}
-.hero{min-height:560px;background:linear-gradient(100deg,#fff 0%,#f7fbff 48%,#eef8f1 100%);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:55px 7%;gap:45px}
-.hero h1{font-size:clamp(42px,6vw,72px);line-height:1;margin:8px 0;color:var(--blue);letter-spacing:1px}.hero h1 span{color:var(--green)}.hero h2{font-size:20px;margin:8px 0;color:#345}.hero p{font-size:18px;max-width:600px}.heroimg{width:100%;max-height:430px;object-fit:cover;border-radius:28px;box-shadow:0 18px 50px #0b3d6222}
-.badges{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}.badge{padding:8px 14px;background:#fff;border:1px solid #d9e8dd;border-radius:20px;font-weight:700;color:#2e6c29}
-section{padding:70px 7%}.sectiontitle{text-align:center;color:var(--blue);font-size:34px;margin:0 0 12px}.subtitle{text-align:center;max-width:720px;margin:0 auto 35px;color:#587080}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{padding:28px;background:#fff;border:1px solid #e1ebef;border-radius:20px;box-shadow:0 8px 28px #123a5210}.icon{font-size:34px}.card h3{color:var(--blue);margin:10px 0 5px}
-.about{background:var(--light)}.contact{background:linear-gradient(135deg,#063b78,#0a5b9a);color:#fff}.contact .sectiontitle{color:#fff}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}.contactbox{background:#ffffff12;border:1px solid #ffffff25;border-radius:20px;padding:28px}.contactbox h3{margin-top:0}.address{font-size:18px}.mapbtn{background:#fff;color:var(--blue);margin-top:10px}
-footer{background:#062f5f;color:#dce9f5;text-align:center;padding:25px 7%;font-size:14px}
-@media(max-width:800px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:38px 6%}.heroimg{max-height:260px}.cards,.contactgrid{grid-template-columns:1fr}section{padding:50px 6%}.nav img{width:135px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nirala Medicos | Trusted Pharmacy in Shahjahanpur</title>
+
+  <meta name="description" content="Nirala Medicos is a trusted pharmacy in Shahjahanpur dedicated to providing genuine allopathic medicines.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f9f8;
+      color: #17332f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #087f5b;
+    }
+
+    .tagline {
+      font-size: 12px;
+      color: #66736f;
+    }
+
+    .hero {
+      padding: 70px 7% 60px;
+      background: linear-gradient(135deg, #e9fff6, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #d9f8ed;
+      color: #087f5b;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      color: #123c34;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #5b6965;
+      font-size: 17px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 13px 22px;
+      border-radius: 10px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: #087f5b;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #066b4d;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #087f5b;
+      border: 1px solid #b9ded1;
+    }
+
+    section {
+      padding: 55px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 30px;
+      color: #123c34;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #697773;
+    }
+
+    .cards {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px 22px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: #173f36;
+    }
+
+    .card p {
+      color: #6a7773;
+      font-size: 14px;
+    }
+
+    .info {
+      max-width: 900px;
+      margin: auto;
+      background: #123c34;
+      color: white;
+      padding: 35px;
+      border-radius: 22px;
+    }
+
+    .info h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .info-row {
+      margin: 13px 0;
+      color: #e0efea;
+    }
+
+    .info-row strong {
+      color: white;
+    }
+
+    footer {
+      background: #0c2924;
+      color: #bcd0ca;
+      text-align: center;
+      padding: 28px 7%;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 15px 5%;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .hero {
+        padding: 55px 5% 45px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 45px 5%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .info {
+        padding: 27px 22px;
+      }
+
+      .info h2 {
+        font-size: 24px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<nav class="nav">
-  <a href="#"><img src="logo.png" alt="Nirala Medicos logo"></a>
-  <div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
-  <a class="btn green" href="#contact">Visit Us</a>
-</nav>
 
-<header class="hero">
-  <div>
-    <div style="font-weight:800;color:#4c9f20;letter-spacing:2px">YOUR HEALTH, OUR PRIORITY</div>
-    <h1>NIRALA <span>MEDICOS</span></h1>
-    <h2>Your trusted neighbourhood pharmacy in Shahjahanpur</h2>
-    <p>Quality allopathic medicines with a focus on genuine products, dependable service and your everyday healthcare needs.</p>
-    <div class="badges">
-      <span class="badge">✓ Allopathic Medicines</span>
-      <span class="badge">✓ Genuine Products</span>
-      <span class="badge">✓ Quality Care</span>
+  <header>
+    <div>
+      <div class="logo">Nirala Medicos</div>
+      <div class="tagline">Trusted Pharmacy in Shahjahanpur</div>
     </div>
-    <a class="btn" href="#contact">Find Our Store</a>
-  </div>
-  <img class="heroimg" src="cover.png" alt="Nirala Medicos pharmacy branding">
-</header>
+  </header>
 
-<section id="about" class="about">
-  <h2 class="sectiontitle">About Nirala Medicos</h2>
-  <p class="subtitle">A professional local pharmacy serving customers in Shahjahanpur with genuine allopathic medicines and a convenient store location.</p>
-  <div class="cards">
-    <div class="card"><div class="icon">💊</div><h3>Allopathic Medicines</h3><p>We focus on allopathic medicines and pharmacy essentials for your healthcare needs.</p></div>
-    <div class="card"><div class="icon">✓</div><h3>Genuine Products</h3><p>We aim to provide authentic medicines and dependable pharmacy service.</p></div>
-    <div class="card"><div class="icon">♥</div><h3>Customer First</h3><p>Clear service, easy access and a convenient location near Khannaut Bridge.</p></div>
-  </div>
-</section>
+  <main>
 
-<section id="services">
-  <h2 class="sectiontitle">What We Offer</h2>
-  <p class="subtitle">Simple, reliable pharmacy service from a local store you can find easily.</p>
-  <div class="cards">
-    <div class="card"><h3>Prescription Medicines</h3><p>Allopathic medicines as prescribed by your doctor.</p></div>
-    <div class="card"><h3>OTC Pharmacy Essentials</h3><p>Common pharmacy and healthcare essentials available at the store.</p></div>
-    <div class="card"><h3>Easy Store Access</h3><p>Located on Lodhipur Road near Khannaut Bridge, Shahjahanpur.</p></div>
-  </div>
-</section>
+    <section class="hero">
+      <div class="hero-content">
 
-<section id="contact" class="contact">
-  <h2 class="sectiontitle">Visit Nirala Medicos</h2>
-  <p class="subtitle" style="color:#dbe9f5">Come by our store for your pharmacy needs.</p>
-  <div class="contactgrid">
-    <div class="contactbox">
-      <h3>📍 Store Address</h3>
-      <p class="address">Bahadurpura, Lodhipur Road,<br>Near Khannaut Bridge,<br>Shahjahanpur, Uttar Pradesh – 242001, India</p>
-      <p><strong>Landmark:</strong> Baba Sahab Petrol Pump</p>
-      <a class="btn mapbtn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos%2C+Bahadurpura%2C+Lodhipur+Road%2C+Shahjahanpur%2C+Uttar+Pradesh+242001">Open in Google Maps</a>
-    </div>
-    <div class="contactbox">
-      <h3>🕒 Opening Hours</h3>
-      <p><strong>Every day:</strong> 8:00 AM – 10:00 PM</p>
-      <h3>ℹ️ Store Information</h3>
-      <p>Allopathic medicines only.</p>
-      <p>Home delivery and BP/Sugar checking are currently not available.</p>
-    </div>
-  </div>
-</section>
+        <div class="badge">✓ Genuine Allopathic Medicines</div>
 
-<footer>
-  <strong>NIRALA MEDICOS</strong> · Your Health, Our Priority<br>
-  Bahadurpura, Lodhipur Road, Shahjahanpur, Uttar Pradesh – 242001
-</footer>
+        <h1>Your Trusted Pharmacy in Shahjahanpur</h1>
+
+        <p>
+          Nirala Medicos is a trusted pharmacy in Shahjahanpur
+          dedicated to providing genuine allopathic medicines.
+        </p>
+
+        <div class="buttons">
+
+          <a class="btn btn-primary"
+             href="tel:+918445904979">
+            📞 Call Now
+          </a>
+
+          <a class="btn btn-whatsapp"
+             href="https://wa.me/918445904979"
+             target="_blank">
+            💬 WhatsApp
+          </a>
+
+          <a class="btn btn-secondary"
+             href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur"
+             target="_blank">
+            📍 Get Directions
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+
+      <div class="section-title">
+        <h2>What We Offer</h2>
+        <p>Quality medicines and pharmacy services you can rely on.</p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">💊</div>
+          <h3>Allopathic Medicines</h3>
+          <p>
+            Genuine allopathic medicines from trusted pharmaceutical brands.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✅</div>
+          <h3>Genuine Products</h3>
+          <p>
+            We focus on providing authentic and quality pharmacy products.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🏪</div>
+          <h3>Local Pharmacy</h3>
+          <p>
+            Conveniently located in Shahjahanpur for your everyday medicine needs.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="info">
+
+        <h2>Visit Nirala Medicos</h2>
+
+        <div class="info-row">
+          📍 <strong>Address:</strong><br>
+          Mohalla Bahadurpura, Lodhipur Road,<br>
+          Near Baba Sahab Petrol Pump,<br>
+          Shahjahanpur, Uttar Pradesh – 242001
+        </div>
+
+        <div class="info-row">
+          🕐 <strong>Opening Hours:</strong><br>
+          Daily: 8:00 AM – 10:00 PM
+        </div>
+
+        <div class="info-row">
+          💊 <strong>Speciality:</strong><br>
+          Allopathic Medicines
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <strong>Nirala Medicos</strong><br>
+
+    Trusted Pharmacy in Shahjahanpur
+
+    <br><br>
+
+    © 2026 Nirala Medicos. All Rights Reserved.
+
+  </footer>
+
 </body>
 </html>
