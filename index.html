@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Nirala Medicos | Trusted Pharmacy in Shahjahanpur</title>
 
-<meta name="description" content="Nirala Medicos is a trusted pharmacy in Shahjahanpur dedicated to providing genuine allopathic medicines.">
+<meta name="description" content="Nirala Medicos is a trusted pharmacy in Shahjahanpur providing genuine allopathic medicines, prescription medicines, OTC medicines, healthcare essentials, personal care products and wellness solutions.">
+
+<meta name="robots" content="index, follow">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -18,6 +22,7 @@
 :root{
     --green:#075c43;
     --green-dark:#044a36;
+    --green-light:#edf7f3;
     --blue:#092b4c;
     --blue-dark:#061f38;
     --white:#ffffff;
@@ -38,6 +43,15 @@ body{
     line-height:1.6;
 }
 
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+}
+
+
 /* ================= HEADER ================= */
 
 header{
@@ -52,7 +66,7 @@ header{
 .navbar{
     max-width:1320px;
     margin:auto;
-    padding:16px 35px;
+    padding:15px 35px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -87,11 +101,10 @@ header{
 .nav-links{
     display:flex;
     align-items:center;
-    gap:30px;
+    gap:28px;
 }
 
 .nav-links a{
-    text-decoration:none;
     color:var(--blue);
     font-size:14px;
     font-weight:600;
@@ -108,20 +121,18 @@ header{
     border-radius:8px;
 }
 
+
 /* ================= HERO ================= */
 
 .hero{
     background:white;
-    min-height:650px;
-    display:flex;
-    align-items:center;
 }
 
 .hero-container{
     max-width:1320px;
     width:100%;
     margin:auto;
-    padding:80px 35px;
+    padding:75px 35px;
     display:grid;
     grid-template-columns:1.05fr 0.95fr;
     gap:65px;
@@ -132,7 +143,7 @@ header{
     display:inline-flex;
     align-items:center;
     gap:8px;
-    background:#edf7f3;
+    background:var(--green-light);
     color:var(--green);
     padding:8px 15px;
     border-radius:30px;
@@ -157,12 +168,12 @@ header{
     max-width:620px;
     color:var(--muted);
     font-size:18px;
-    margin-bottom:32px;
+    margin-bottom:30px;
 }
 
 .hero-buttons{
     display:flex;
-    gap:13px;
+    gap:12px;
     flex-wrap:wrap;
 }
 
@@ -171,8 +182,7 @@ header{
     align-items:center;
     justify-content:center;
     gap:8px;
-    text-decoration:none;
-    padding:14px 22px;
+    padding:14px 21px;
     border-radius:9px;
     font-weight:bold;
     font-size:14px;
@@ -210,11 +220,12 @@ header{
     color:var(--green);
 }
 
+
 /* ================= COVER PHOTO ================= */
 
 .hero-visual{
     width:100%;
-    height:500px;
+    aspect-ratio:16 / 10;
     background:var(--blue);
     border-radius:28px;
     overflow:hidden;
@@ -224,9 +235,11 @@ header{
 .hero-visual img{
     width:100%;
     height:100%;
-    object-fit:cover;
+    object-fit:contain;
+    background:var(--blue);
     display:block;
 }
+
 
 /* ================= TRUST BAR ================= */
 
@@ -248,10 +261,11 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:10px;
+    gap:9px;
     font-size:14px;
     font-weight:bold;
 }
+
 
 /* ================= COMMON ================= */
 
@@ -266,7 +280,7 @@ header{
 
 .section-heading{
     text-align:center;
-    max-width:650px;
+    max-width:700px;
     margin:0 auto 50px;
 }
 
@@ -288,10 +302,192 @@ header{
     color:var(--muted);
 }
 
+
+/* ================= MEDICINE SEARCH ================= */
+
+.medicine-section{
+    background:white;
+}
+
+.search-box{
+    max-width:760px;
+    margin:0 auto 45px;
+    position:relative;
+}
+
+.search-input{
+    width:100%;
+    padding:18px 22px 18px 52px;
+    border:1px solid #cfd9df;
+    border-radius:14px;
+    outline:none;
+    font-size:16px;
+    color:var(--text);
+    box-shadow:0 8px 25px rgba(9,43,76,0.06);
+}
+
+.search-input:focus{
+    border-color:var(--green);
+    box-shadow:0 0 0 3px rgba(7,92,67,0.08);
+}
+
+.search-icon{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+}
+
+.medicine-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.medicine-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:25px;
+    transition:0.25s;
+}
+
+.medicine-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(9,43,76,0.08);
+}
+
+.medicine-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:var(--green-light);
+    color:var(--green);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+    margin-bottom:16px;
+}
+
+.medicine-card h3{
+    color:var(--blue);
+    font-size:18px;
+    margin-bottom:7px;
+}
+
+.medicine-card p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+.no-results{
+    display:none;
+    text-align:center;
+    color:var(--muted);
+    padding:30px;
+}
+
+
+/* ================= PRESCRIPTION ================= */
+
+.prescription-section{
+    background:var(--light);
+}
+
+.prescription-box{
+    max-width:950px;
+    margin:auto;
+    background:white;
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:45px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.prescription-content .small{
+    color:var(--green);
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.prescription-content h2{
+    color:var(--blue);
+    font-size:34px;
+    margin:8px 0 14px;
+}
+
+.prescription-content p{
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.prescription-list{
+    display:grid;
+    gap:9px;
+}
+
+.prescription-list div{
+    color:var(--blue);
+    font-size:14px;
+    font-weight:600;
+}
+
+.upload-card{
+    background:var(--blue);
+    color:white;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+}
+
+.upload-icon{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    background:var(--green);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 18px;
+    font-size:30px;
+}
+
+.upload-card h3{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.upload-card p{
+    color:#dce6ee;
+    font-size:13px;
+    margin-bottom:22px;
+}
+
+.upload-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:14px;
+    background:white;
+    color:var(--green);
+    border-radius:9px;
+    font-weight:bold;
+}
+
+
 /* ================= SERVICES ================= */
 
 .services{
-    background:var(--light);
+    background:white;
 }
 
 .service-grid{
@@ -301,7 +497,7 @@ header{
 }
 
 .service-card{
-    background:white;
+    background:var(--light);
     padding:34px;
     border-radius:16px;
     border:1px solid var(--border);
@@ -316,7 +512,7 @@ header{
 .service-icon{
     width:55px;
     height:55px;
-    background:#edf7f3;
+    background:var(--green-light);
     color:var(--green);
     border-radius:13px;
     display:flex;
@@ -337,11 +533,12 @@ header{
     font-size:14px;
 }
 
+
 /* ================= ABOUT ================= */
 
 .about-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:0.85fr 1.15fr;
     gap:70px;
     align-items:center;
 }
@@ -369,9 +566,10 @@ header{
     margin-bottom:18px;
 }
 
-.about-content p{
+.about-content > p{
     color:var(--muted);
-    margin-bottom:20px;
+    margin-bottom:22px;
+    font-size:15px;
 }
 
 .feature-list{
@@ -398,6 +596,7 @@ header{
     align-items:center;
     justify-content:center;
 }
+
 
 /* ================= CONTACT ================= */
 
@@ -434,7 +633,7 @@ header{
     width:42px;
     height:42px;
     flex-shrink:0;
-    background:#edf7f3;
+    background:var(--green-light);
     color:var(--green);
     border-radius:10px;
     display:flex;
@@ -452,6 +651,7 @@ header{
     color:var(--muted);
     font-size:14px;
 }
+
 
 /* ================= CTA ================= */
 
@@ -482,6 +682,7 @@ header{
     background:white;
     color:var(--green);
 }
+
 
 /* ================= FOOTER ================= */
 
@@ -516,6 +717,26 @@ footer{
     text-align:right;
 }
 
+
+/* ================= TABLET ================= */
+
+@media(max-width:1050px){
+
+    .medicine-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero-container{
+        gap:40px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+}
+
+
 /* ================= MOBILE ================= */
 
 @media(max-width:900px){
@@ -534,12 +755,8 @@ footer{
         padding:60px 20px;
     }
 
-    .hero h1{
-        font-size:43px;
-    }
-
     .hero-visual{
-        height:380px;
+        aspect-ratio:16 / 10;
     }
 
     .trust-container{
@@ -559,7 +776,13 @@ footer{
     .contact-grid{
         grid-template-columns:1fr;
     }
+
+    .prescription-box{
+        grid-template-columns:1fr;
+    }
+
 }
+
 
 @media(max-width:600px){
 
@@ -590,7 +813,7 @@ footer{
     }
 
     .hero-visual{
-        height:300px;
+        aspect-ratio:4 / 3;
         border-radius:20px;
     }
 
@@ -604,8 +827,21 @@ footer{
         font-size:30px;
     }
 
+    .medicine-grid{
+        grid-template-columns:1fr;
+    }
+
     .service-grid{
         grid-template-columns:1fr;
+    }
+
+    .prescription-box{
+        padding:25px;
+        gap:30px;
+    }
+
+    .prescription-content h2{
+        font-size:28px;
     }
 
     .about-box{
@@ -633,444 +869,997 @@ footer{
     .btn{
         width:100%;
     }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
-<!-- HEADER -->
+
+<!-- ================= HEADER ================= -->
 
 <header>
-    <nav class="navbar">
 
-        <div class="logo-area">
+<nav class="navbar">
 
-            <img
-                class="logo-image"
-                src="https://niralamedicos.in/nirala-logo-new.jpg.png"
-                alt="Nirala Medicos Logo"
-            >
+    <div class="logo-area">
 
-            <div class="logo-text">
-                <h2>Nirala Medicos</h2>
-                <span>Trusted Pharmacy in Shahjahanpur</span>
-            </div>
+        <img
+            class="logo-image"
+            src="https://niralamedicos.in/nirala-logo-new.jpg.png"
+            alt="Nirala Medicos Logo"
+        >
 
-        </div>
+        <div class="logo-text">
 
-        <div class="nav-links">
+            <h2>Nirala Medicos</h2>
 
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-
-            <a class="nav-button" href="tel:+918445904979">
-                Call Now
-            </a>
-
-        </div>
-
-    </nav>
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-    <div class="hero-container">
-
-        <div>
-
-            <div class="hero-label">
-                ✓ Genuine Allopathic Medicines
-            </div>
-
-            <h1>
-                Your Trusted
-                <span>Pharmacy</span>
-                in Shahjahanpur
-            </h1>
-
-            <p class="hero-description">
-                Nirala Medicos is a trusted pharmacy in Shahjahanpur
-                dedicated to providing genuine allopathic medicines
-                and quality pharmacy products.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a class="btn btn-green"
-                   href="tel:+918445904979">
-                    📞 Call Now
-                </a>
-
-                <a class="btn btn-blue"
-                   href="https://wa.me/918445904979"
-                   target="_blank">
-                    💬 WhatsApp
-                </a>
-
-                <a class="btn btn-outline"
-                   href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur"
-                   target="_blank">
-                    📍 Get Directions
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-visual">
-
-            <img
-                src="nirala-cover-new.jpg.png"
-                alt="Nirala Medicos Pharmacy"
-            >
+            <span>
+                Trusted Pharmacy in Shahjahanpur
+            </span>
 
         </div>
 
     </div>
 
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#medicines">Medicines</a>
+
+        <a href="#prescription">Prescription</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+        <a
+            class="nav-button"
+            href="tel:+918445904979"
+        >
+            Call Now
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
+
+    <div>
+
+        <div class="hero-label">
+            ✓ Genuine Allopathic Medicines
+        </div>
+
+
+        <h1>
+
+            Your Trusted
+            <span>Pharmacy</span>
+            in Shahjahanpur
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Genuine medicines, healthcare essentials,
+            personal care products and reliable pharmacy
+            services — all in one trusted place.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                class="btn btn-green"
+                href="tel:+918445904979"
+            >
+                📞 Call Now
+            </a>
+
+
+            <a
+                class="btn btn-blue"
+                href="https://wa.me/918445904979"
+                target="_blank"
+            >
+                💬 WhatsApp
+            </a>
+
+
+            <a
+                class="btn btn-outline"
+                href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur"
+                target="_blank"
+            >
+                📍 Get Directions
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <img
+            src="https://niralamedicos.in/nirala-cover-new.jpg.png"
+            alt="Nirala Medicos Pharmacy"
+        >
+
+    </div>
+
+
+</div>
+
 </section>
 
 
-<!-- TRUST BAR -->
+<!-- ================= TRUST BAR ================= -->
 
 <div class="trust-bar">
 
-    <div class="trust-container">
+<div class="trust-container">
 
-        <div class="trust-item">
-            ✓ Genuine Medicines
+    <div class="trust-item">
+        ✓ Genuine Medicines
+    </div>
+
+    <div class="trust-item">
+        ✓ Trusted Pharmacy
+    </div>
+
+    <div class="trust-item">
+        ✓ Shahjahanpur
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- ================= MEDICINE SEARCH ================= -->
+
+<section
+    class="section medicine-section"
+    id="medicines"
+>
+
+<div class="container">
+
+
+    <div class="section-heading">
+
+        <div class="small">
+            Medicine Search
         </div>
 
-        <div class="trust-item">
-            ✓ Trusted Pharmacy
+        <h2>
+            Find Your Medicine
+        </h2>
+
+        <p>
+            Search our available medicine categories
+            and products.
+        </p>
+
+    </div>
+
+
+    <div class="search-box">
+
+        <span class="search-icon">
+            🔎
+        </span>
+
+        <input
+            id="medicineSearch"
+            class="search-input"
+            type="text"
+            placeholder="Search medicine or product..."
+            autocomplete="off"
+        >
+
+    </div>
+
+
+    <div
+        class="medicine-grid"
+        id="medicineGrid"
+    >
+
+
+        <div
+            class="medicine-card"
+            data-name="allopathic medicines tablets capsules syrups"
+        >
+
+            <div class="medicine-icon">
+                💊
+            </div>
+
+            <h3>
+                Allopathic Medicines
+            </h3>
+
+            <p>
+                Tablets, capsules, syrups and other
+                genuine allopathic medicines.
+            </p>
+
         </div>
 
-        <div class="trust-item">
-            ✓ Shahjahanpur
+
+        <div
+            class="medicine-card"
+            data-name="prescription medicines"
+        >
+
+            <div class="medicine-icon">
+                🧾
+            </div>
+
+            <h3>
+                Prescription Medicines
+            </h3>
+
+            <p>
+                Prescription medicines subject to
+                applicable requirements.
+            </p>
+
+        </div>
+
+
+        <div
+            class="medicine-card"
+            data-name="otc medicines over the counter"
+        >
+
+            <div class="medicine-icon">
+                🩹
+            </div>
+
+            <h3>
+                OTC Medicines
+            </h3>
+
+            <p>
+                Common over-the-counter pharmacy
+                products and essentials.
+            </p>
+
+        </div>
+
+
+        <div
+            class="medicine-card"
+            data-name="healthcare essentials"
+        >
+
+            <div class="medicine-icon">
+                🏥
+            </div>
+
+            <h3>
+                Healthcare Essentials
+            </h3>
+
+            <p>
+                Everyday healthcare and pharmacy
+                essentials.
+            </p>
+
+        </div>
+
+
+        <div
+            class="medicine-card"
+            data-name="personal care products"
+        >
+
+            <div class="medicine-icon">
+                🧴
+            </div>
+
+            <h3>
+                Personal Care
+            </h3>
+
+            <p>
+                Personal care and daily-use healthcare
+                products.
+            </p>
+
+        </div>
+
+
+        <div
+            class="medicine-card"
+            data-name="wellness products"
+        >
+
+            <div class="medicine-icon">
+                🌿
+            </div>
+
+            <h3>
+                Wellness Products
+            </h3>
+
+            <p>
+                Selected wellness and healthcare
+                support products.
+            </p>
+
+        </div>
+
+
+        <div
+            class="medicine-card"
+            data-name="first aid"
+        >
+
+            <div class="medicine-icon">
+                🩺
+            </div>
+
+            <h3>
+                First Aid Essentials
+            </h3>
+
+            <p>
+                Everyday first-aid and basic healthcare
+                essentials.
+            </p>
+
+        </div>
+
+
+        <div
+            class="medicine-card"
+            data-name="pharmacy products"
+        >
+
+            <div class="medicine-icon">
+                🏪
+            </div>
+
+            <h3>
+                Pharmacy Products
+            </h3>
+
+            <p>
+                Quality pharmacy products available
+                at Nirala Medicos.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div
+        class="no-results"
+        id="noResults"
+    >
+        No matching product category found.
+        Please contact us on WhatsApp for availability.
+    </div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= PRESCRIPTION ================= -->
+
+<section
+    class="section prescription-section"
+    id="prescription"
+>
+
+<div class="container">
+
+
+    <div class="prescription-box">
+
+
+        <div class="prescription-content">
+
+            <div class="small">
+                Prescription Service
+            </div>
+
+            <h2>
+                Upload Your Prescription
+            </h2>
+
+            <p>
+                Have a prescription? Submit it to Nirala
+                Medicos and contact us for medicine
+                availability and order assistance.
+            </p>
+
+
+            <div class="prescription-list">
+
+                <div>
+                    ✓ Upload a clear prescription
+                </div>
+
+                <div>
+                    ✓ Include your contact details
+                </div>
+
+                <div>
+                    ✓ Our pharmacy team can review the request
+                </div>
+
+                <div>
+                    ✓ Prescription medicines are subject
+                    to applicable requirements
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="upload-card">
+
+            <div class="upload-icon">
+                📄
+            </div>
+
+            <h3>
+                Send Prescription
+            </h3>
+
+            <p>
+                Upload your prescription through our
+                secure submission form.
+            </p>
+
+
+            <!--
+            IMPORTANT:
+            Replace YOUR_GOOGLE_FORM_LINK_HERE
+            with your actual Google Form URL.
+            -->
+
+            <a
+                class="upload-btn"
+                href="YOUR_GOOGLE_FORM_LINK_HERE"
+                target="_blank"
+                rel="noopener"
+            >
+                📤 Upload Prescription
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section
+    class="section services"
+    id="services"
+>
+
+<div class="container">
+
+
+    <div class="section-heading">
+
+        <div class="small">
+            Our Services
+        </div>
+
+        <h2>
+            Quality Pharmacy Products
+        </h2>
+
+        <p>
+            Reliable medicines and pharmacy products
+            for everyday healthcare needs.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                💊
+            </div>
+
+            <h3>
+                Allopathic Medicines
+            </h3>
+
+            <p>
+                Genuine allopathic medicines from
+                trusted pharmaceutical brands.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                ✓
+            </div>
+
+            <h3>
+                Genuine Products
+            </h3>
+
+            <p>
+                We focus on providing authentic and
+                quality pharmacy products.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🏪
+            </div>
+
+            <h3>
+                Local Pharmacy
+            </h3>
+
+            <p>
+                Conveniently located in Shahjahanpur
+                for your medicine needs.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    class="section"
+    id="about"
+>
+
+<div class="container">
+
+
+    <div class="about-grid">
+
+
+        <div class="about-box">
+
+            <h2>
+                Nirala Medicos
+            </h2>
+
+            <p>
+                Your trusted local pharmacy in
+                Shahjahanpur, focused on genuine
+                healthcare products and a reliable
+                customer experience.
+            </p>
+
+        </div>
+
+
+        <div class="about-content">
+
+
+            <div class="section-heading"
+                 style="text-align:left;margin:0 0 25px 0;">
+
+                <div class="small">
+                    About Us
+                </div>
+
+                <h2>
+                    Trusted. Genuine. Local.
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                Nirala Medicos is a trusted pharmacy in
+                Shahjahanpur dedicated to providing genuine
+                allopathic medicines, prescription medicines,
+                OTC medicines, healthcare essentials, personal
+                care products, and wellness solutions. We are
+                committed to delivering quality healthcare
+                products, fair pricing, and reliable customer
+                service while ensuring a convenient and
+                trustworthy experience for every customer.
+
+            </p>
+
+
+            <div class="feature-list">
+
+                <div class="feature">
+                    <span>✓</span>
+                    Genuine allopathic medicines
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Prescription & OTC medicines
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Healthcare & personal care essentials
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Fair pricing & reliable service
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    Convenient Shahjahanpur location
+                </div>
+
+            </div>
+
+
         </div>
 
     </div>
 
 </div>
 
+</section>
 
-<!-- SERVICES -->
 
-<section class="section services" id="services">
+<!-- ================= CONTACT ================= -->
 
-    <div class="container">
+<section
+    class="section contact"
+    id="contact"
+>
 
-        <div class="section-heading">
+<div class="container">
 
-            <div class="small">Our Services</div>
 
-            <h2>Quality Pharmacy Products</h2>
+    <div class="section-heading">
 
-            <p>
-                Reliable medicines and pharmacy products
-                for your everyday healthcare needs.
+        <div class="small">
+            Visit Us
+        </div>
+
+        <h2>
+            Find Nirala Medicos
+        </h2>
+
+        <p>
+            Visit our pharmacy in Shahjahanpur.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-card">
+
+            <h3>
+                Store Information
+            </h3>
+
+
+            <div class="contact-row">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <strong>
+                        Address
+                    </strong>
+
+                    <p>
+                        Mohalla Bahadurpura,
+                        Lodhipur Road,<br>
+                        Near Baba Sahab Petrol Pump,<br>
+                        Shahjahanpur,
+                        Uttar Pradesh – 242001
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <div class="contact-icon">
+                    🕐
+                </div>
+
+                <div>
+
+                    <strong>
+                        Opening Hours
+                    </strong>
+
+                    <p>
+                        Daily: 8:00 AM – 10:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+
+                    <strong>
+                        Phone
+                    </strong>
+
+                    <p>
+                        8445904979
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>
+                Quick Contact
+            </h3>
+
+            <p style="color:#647383;margin-bottom:25px;">
+
+                Get in touch with Nirala Medicos
+                directly.
+
             </p>
 
-        </div>
+
+            <div class="hero-buttons">
 
 
-        <div class="service-grid">
-
-            <div class="service-card">
-
-                <div class="service-icon">💊</div>
-
-                <h3>Allopathic Medicines</h3>
-
-                <p>
-                    Genuine allopathic medicines from
-                    trusted pharmaceutical brands.
-                </p>
-
-            </div>
+                <a
+                    class="btn btn-green"
+                    href="tel:+918445904979"
+                >
+                    📞 Call 8445904979
+                </a>
 
 
-            <div class="service-card">
-
-                <div class="service-icon">✓</div>
-
-                <h3>Genuine Products</h3>
-
-                <p>
-                    We focus on providing authentic
-                    and quality pharmacy products.
-                </p>
-
-            </div>
+                <a
+                    class="btn btn-blue"
+                    href="https://wa.me/918445904979"
+                    target="_blank"
+                >
+                    💬 Chat on WhatsApp
+                </a>
 
 
-            <div class="service-card">
+                <a
+                    class="btn btn-outline"
+                    href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur"
+                    target="_blank"
+                >
+                    📍 Open in Google Maps
+                </a>
 
-                <div class="service-icon">🏪</div>
-
-                <h3>Local Pharmacy</h3>
-
-                <p>
-                    Conveniently located in Shahjahanpur
-                    for your medicine needs.
-                </p>
 
             </div>
 
         </div>
+
 
     </div>
+
+</div>
 
 </section>
 
 
-<!-- ABOUT -->
-
-<section class="section" id="about">
-
-    <div class="container">
-
-        <div class="about-grid">
-
-            <div class="about-box">
-
-                <h2>Nirala Medicos</h2>
-
-                <p>
-                    A trusted local pharmacy serving the
-                    Shahjahanpur community with genuine
-                    allopathic medicines and quality
-                    pharmacy products.
-                </p>
-
-            </div>
-
-
-            <div class="about-content">
-
-                <div class="section-heading"
-                     style="text-align:left;margin:0 0 25px 0;">
-
-                    <div class="small">Why Choose Us</div>
-
-                    <h2>Trusted. Genuine. Local.</h2>
-
-                </div>
-
-                <p>
-                    Our focus is on making genuine pharmacy
-                    products easily accessible while providing
-                    a convenient experience for our customers.
-                </p>
-
-                <div class="feature-list">
-
-                    <div class="feature">
-                        <span>✓</span>
-                        Genuine allopathic medicines
-                    </div>
-
-                    <div class="feature">
-                        <span>✓</span>
-                        Convenient Shahjahanpur location
-                    </div>
-
-                    <div class="feature">
-                        <span>✓</span>
-                        Open daily from 8 AM to 10 PM
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="section contact" id="contact">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="small">Visit Us</div>
-
-            <h2>Find Nirala Medicos</h2>
-
-            <p>
-                Visit our pharmacy in Shahjahanpur.
-            </p>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-            <div class="contact-card">
-
-                <h3>Store Information</h3>
-
-                <div class="contact-row">
-
-                    <div class="contact-icon">📍</div>
-
-                    <div>
-                        <strong>Address</strong>
-
-                        <p>
-                            Mohalla Bahadurpura, Lodhipur Road,<br>
-                            Near Baba Sahab Petrol Pump,<br>
-                            Shahjahanpur, Uttar Pradesh – 242001
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-row">
-
-                    <div class="contact-icon">🕐</div>
-
-                    <div>
-                        <strong>Opening Hours</strong>
-
-                        <p>
-                            Daily: 8:00 AM – 10:00 PM
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-row">
-
-                    <div class="contact-icon">📞</div>
-
-                    <div>
-                        <strong>Phone</strong>
-
-                        <p>
-                            8445904979
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="contact-card">
-
-                <h3>Quick Contact</h3>
-
-                <p style="color:#647383;margin-bottom:25px;">
-                    Get in touch with Nirala Medicos directly.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a class="btn btn-green"
-                       href="tel:+918445904979">
-                        📞 Call 8445904979
-                    </a>
-
-                    <a class="btn btn-blue"
-                       href="https://wa.me/918445904979"
-                       target="_blank">
-                        💬 Chat on WhatsApp
-                    </a>
-
-                    <a class="btn btn-outline"
-                       href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur"
-                       target="_blank">
-                        📍 Open in Google Maps
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CTA -->
+<!-- ================= CTA ================= -->
 
 <section class="section cta">
 
-    <div class="container">
+<div class="container">
 
-        <h2>Need a Medicine?</h2>
+    <h2>
+        Need a Medicine?
+    </h2>
 
-        <p>
-            Contact Nirala Medicos today.
-        </p>
+    <p>
+        Search for a product, upload your prescription
+        or contact Nirala Medicos directly.
+    </p>
 
-        <div class="cta-buttons">
 
-            <a class="btn"
-               href="tel:+918445904979">
-                📞 Call Now
-            </a>
+    <div class="cta-buttons">
 
-            <a class="btn"
-               href="https://wa.me/918445904979"
-               target="_blank">
-                💬 WhatsApp Us
-            </a>
+        <a
+            class="btn"
+            href="#medicines"
+        >
+            🔎 Search Medicines
+        </a>
 
-        </div>
+
+        <a
+            class="btn"
+            href="#prescription"
+        >
+            📄 Upload Prescription
+        </a>
+
+
+        <a
+            class="btn"
+            href="https://wa.me/918445904979"
+            target="_blank"
+        >
+            💬 WhatsApp Us
+        </a>
 
     </div>
+
+</div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <div class="footer-container">
+<div class="footer-container">
 
-        <div>
 
-            <div class="footer-logo">
-                Nirala Medicos
-            </div>
+    <div>
 
-            <div class="footer-sub">
-                Trusted Pharmacy in Shahjahanpur
-            </div>
-
+        <div class="footer-logo">
+            Nirala Medicos
         </div>
 
-
-        <div class="footer-copy">
-
-            © 2026 Nirala Medicos.<br>
-            All Rights Reserved.
-
+        <div class="footer-sub">
+            Trusted Pharmacy in Shahjahanpur
         </div>
 
     </div>
 
+
+    <div class="footer-copy">
+
+        © 2026 Nirala Medicos.<br>
+        All Rights Reserved.
+
+    </div>
+
+
+</div>
+
 </footer>
+
+
+<!-- ================= SEARCH SCRIPT ================= -->
+
+<script>
+
+const searchInput =
+    document.getElementById("medicineSearch");
+
+const medicineCards =
+    document.querySelectorAll(".medicine-card");
+
+const noResults =
+    document.getElementById("noResults");
+
+
+searchInput.addEventListener("input", function(){
+
+    const searchTerm =
+        this.value.toLowerCase().trim();
+
+    let visibleCount = 0;
+
+
+    medicineCards.forEach(function(card){
+
+        const medicineName =
+            card.getAttribute("data-name").toLowerCase();
+
+        if(
+            medicineName.includes(searchTerm)
+            ||
+            searchTerm === ""
+        ){
+
+            card.style.display = "block";
+            visibleCount++;
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    if(visibleCount === 0){
+
+        noResults.style.display = "block";
+
+    }else{
+
+        noResults.style.display = "none";
+
+    }
+
+});
+
+</script>
+
 
 </body>
 </html>
