@@ -6,9 +6,13 @@
 
 <title>Nirala Medicos | Trusted Pharmacy in Shahjahanpur</title>
 
-<meta name="description" content="Nirala Medicos - Trusted pharmacy in Shahjahanpur providing genuine allopathic medicines, healthcare essentials and personal care products.">
+<meta name="description" content="Nirala Medicos provides genuine allopathic medicines, healthcare essentials, personal care products and pharmacy services with convenient medicine ordering and prescription submission.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://niralamedicos.in/">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -20,15 +24,14 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    color:#0b304d;
-    background:#ffffff;
-    overflow-x:hidden;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#16354d;
+    background:#fff;
+    line-height:1.6;
 }
 
 a{
     text-decoration:none;
-    color:inherit;
 }
 
 button,
@@ -36,50 +39,45 @@ input{
     font-family:inherit;
 }
 
-.container{
-    width:92%;
-    max-width:1280px;
-    margin:auto;
-}
 
-
-/* =========================
-   HEADER
-========================= */
+/* ================= HEADER ================= */
 
 header{
     background:#fff;
-    border-bottom:1px solid #e7eeee;
+    border-bottom:1px solid #e5ecea;
     position:sticky;
     top:0;
     z-index:1000;
 }
 
 .navbar{
-    min-height:78px;
+    max-width:1320px;
+    margin:auto;
+    min-height:82px;
+    padding:12px 30px;
+
     display:flex;
     align-items:center;
-    gap:20px;
 }
 
 .logo-area{
     display:flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
     margin-right:auto;
 }
 
-.logo-area img{
-    width:55px;
-    height:55px;
+.logo-image{
+    width:58px;
+    height:58px;
     object-fit:contain;
 }
 
 .logo-text h1{
-    font-size:25px;
+    color:#092f4d;
+    font-size:28px;
+    line-height:1.05;
     font-weight:800;
-    letter-spacing:.3px;
-    color:#0b304d;
 }
 
 .logo-text p{
@@ -93,12 +91,12 @@ header{
     display:flex;
     align-items:center;
     gap:25px;
-    font-size:13px;
-    font-weight:700;
 }
 
 .nav-links a{
-    transition:.2s;
+    color:#17384e;
+    font-size:13px;
+    font-weight:700;
 }
 
 .nav-links a:hover{
@@ -108,87 +106,91 @@ header{
 .call-btn{
     background:#087653;
     color:#fff !important;
-    padding:11px 18px;
+    padding:11px 19px;
     border-radius:7px;
 }
 
 .menu-btn{
     display:none;
     border:0;
-    background:none;
-    font-size:30px;
-    color:#0b304d;
+    background:transparent;
+    color:#092f4d;
+    font-size:29px;
     cursor:pointer;
-    line-height:1;
 }
 
 
-/* =========================
-   SEARCH
-========================= */
+/* ================= SEARCH ================= */
 
-.search-area{
-    padding:17px 0;
+.search-section{
+    padding:17px 20px;
     background:#fff;
     border-bottom:1px solid #edf1f0;
 }
 
 .search-box{
     max-width:850px;
-    height:52px;
+    height:54px;
     margin:auto;
 
     display:flex;
     align-items:center;
 
-    border:1px solid #d8e2df;
+    border:1px solid #d6e1de;
     border-radius:30px;
 
-    padding-left:21px;
+    padding-left:22px;
     padding-right:6px;
 
-    box-shadow:0 3px 14px rgba(0,0,0,.04);
+    box-shadow:0 5px 20px rgba(0,0,0,.04);
+}
+
+.search-box span{
+    font-size:19px;
+    margin-right:10px;
 }
 
 .search-box input{
     flex:1;
     border:0;
-    outline:none;
-    background:transparent;
-    color:#17384e;
+    outline:0;
     font-size:14px;
+    color:#17384e;
 }
 
 .search-box input::placeholder{
-    color:#89949a;
+    color:#899499;
 }
 
-.search-btn{
-    width:40px;
-    height:40px;
+.search-button{
+    width:42px;
+    height:42px;
     border:0;
     border-radius:50%;
     background:#087653;
     color:#fff;
-    cursor:pointer;
-    font-size:19px;
+    font-size:18px;
 }
 
 
-/* =========================
-   TRUST BAR
-========================= */
+/* ================= TRUST ================= */
 
 .trust-bar{
+    max-width:1320px;
+    margin:auto;
+
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    border-bottom:1px solid #e8eeee;
+
+    border-left:1px solid #e5ecea;
+    border-right:1px solid #e5ecea;
+    border-bottom:1px solid #e5ecea;
 }
 
 .trust-item{
-    padding:14px 10px;
+    padding:15px 8px;
     text-align:center;
-    border-right:1px solid #e8eeee;
+    border-right:1px solid #e5ecea;
 }
 
 .trust-item:last-child{
@@ -199,60 +201,61 @@ header{
     display:block;
     color:#17384e;
     font-size:12px;
-    margin-bottom:4px;
 }
 
 .trust-item span{
-    color:#78858b;
+    display:block;
+    color:#7c888d;
     font-size:10px;
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* ================= HERO ================= */
 
 .hero{
-    background:#f7fbfa;
-    padding:55px 0;
+    background:#f6fbf9;
+    padding:65px 30px;
 }
 
-.hero-content{
+.hero-container{
+    max-width:1320px;
+    margin:auto;
+
     display:grid;
     grid-template-columns:1fr 1fr;
+    gap:55px;
     align-items:center;
-    gap:45px;
 }
 
 .badge{
     display:inline-block;
-    background:#e8f7f2;
+    background:#e6f6f1;
     color:#087653;
-    padding:9px 15px;
+    padding:8px 15px;
     border-radius:25px;
+
     font-size:12px;
     font-weight:700;
     margin-bottom:20px;
 }
 
 .hero h2{
-    color:#0b304d;
-    font-size:54px;
-    line-height:1.04;
+    color:#092f4d;
+    font-size:57px;
+    line-height:1.05;
+    letter-spacing:-1.5px;
     margin-bottom:20px;
-    letter-spacing:-1px;
 }
 
 .hero h2 span{
     color:#087653;
 }
 
-.hero p{
-    max-width:590px;
+.hero-description{
+    max-width:600px;
     color:#6f7d83;
     font-size:16px;
-    line-height:1.7;
-    margin-bottom:27px;
+    margin-bottom:28px;
 }
 
 .hero-buttons{
@@ -265,176 +268,152 @@ header{
     display:inline-flex;
     align-items:center;
     justify-content:center;
+
+    padding:13px 20px;
     min-height:44px;
-    padding:12px 21px;
-    border-radius:7px;
+
+    border-radius:8px;
     font-size:13px;
     font-weight:700;
-    transition:.2s;
 }
 
-.btn:hover{
-    transform:translateY(-1px);
-}
-
-.btn-primary{
+.btn-green{
     background:#087653;
     color:#fff;
 }
 
-.btn-whatsapp{
-    background:#0b304d;
+.btn-blue{
+    background:#092f4d;
     color:#fff;
 }
 
 .btn-outline{
-    border:1px solid #cedbd7;
     background:#fff;
+    border:1px solid #ccd9d6;
     color:#17384e;
 }
 
 
-/* =========================
-   COVER IMAGE
-========================= */
+/* ================= COVER IMAGE ================= */
 
-.hero-image{
+.hero-visual{
     width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.hero-image img{
-    display:block;
+.hero-visual img{
     width:100%;
-    max-width:620px;
+    max-width:650px;
     height:auto;
 
     /*
-       IMPORTANT:
-       Full image visible.
-       No crop.
-       No distortion.
+      IMPORTANT:
+      Image crop nahi hogi.
+      Puri image visible rahegi.
     */
-    object-fit:contain;
 
-    border-radius:20px;
+    object-fit:contain;
+    display:block;
+    border-radius:22px;
 }
 
 
-/* =========================
-   BENEFITS
-========================= */
+/* ================= BENEFITS ================= */
 
 .benefits{
+    max-width:1260px;
+    margin:30px auto 70px;
+
     display:grid;
     grid-template-columns:repeat(5,1fr);
 
-    border:1px solid #e2ebe8;
+    border:1px solid #e0e9e6;
     border-radius:15px;
-
     overflow:hidden;
-
-    margin:30px auto 65px;
-
-    background:#fff;
 }
 
 .benefit{
-    padding:21px 10px;
+    padding:21px 8px;
     text-align:center;
-    border-right:1px solid #e2ebe8;
-
     color:#17384e;
     font-size:12px;
     font-weight:700;
+    border-right:1px solid #e0e9e6;
 }
 
 .benefit:last-child{
     border-right:0;
 }
 
-.benefit span{
+.benefit small{
     display:block;
-    color:#7b878b;
+    color:#7c888d;
     font-size:10px;
     font-weight:400;
-    margin-top:5px;
 }
 
 
-/* =========================
-   CATEGORIES
-========================= */
+/* ================= COMMON SECTION ================= */
 
-.categories{
-    padding:0 0 75px;
+.section{
+    max-width:1320px;
+    margin:auto;
+    padding:0 30px 75px;
 }
 
-.section-heading{
-    display:flex;
-    align-items:flex-end;
-    justify-content:space-between;
-    gap:20px;
+.section-title{
     margin-bottom:25px;
 }
 
-.section-heading h2{
-    color:#0b304d;
-    font-size:30px;
-    margin-bottom:6px;
+.section-title h2{
+    color:#092f4d;
+    font-size:32px;
+    margin-bottom:5px;
 }
 
-.section-heading p{
+.section-title p{
     color:#7a878c;
     font-size:13px;
 }
 
-.view-all{
-    color:#087653;
-    font-size:12px;
-    font-weight:700;
-}
+
+/* ================= CATEGORIES ================= */
 
 .category-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:17px;
+    gap:18px;
 }
 
 .category-card{
-    min-height:165px;
-
-    background:#fff;
-    border:1px solid #e0e8e6;
+    border:1px solid #dfe8e5;
     border-radius:15px;
-
     padding:25px 20px;
-
+    min-height:165px;
     transition:.25s;
+    background:#fff;
 }
 
 .category-card:hover{
-    transform:translateY(-3px);
-    border-color:#b8d8ce;
-    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
 }
 
 .category-icon{
-    width:44px;
-    height:44px;
+    width:45px;
+    height:45px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    background:#edf8f5;
+    background:#eaf7f3;
     border-radius:12px;
 
-    font-size:22px;
-
-    margin-bottom:17px;
+    font-size:21px;
+    margin-bottom:15px;
 }
 
 .category-card h3{
@@ -444,37 +423,128 @@ header{
 }
 
 .category-card p{
-    color:#78858a;
+    color:#7a878c;
     font-size:11px;
-    line-height:1.5;
 }
 
 
-/* =========================
-   HOW IT WORKS
-========================= */
+/* ================= PRESCRIPTION ================= */
 
-.how{
-    background:#f7fbfa;
-    padding:60px 0 70px;
+.prescription-section{
+    background:#f5faf8;
+    padding:75px 30px;
+}
+
+.prescription-container{
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+
+    align-items:center;
+}
+
+.prescription-text .small{
+    color:#087653;
+    text-transform:uppercase;
+    letter-spacing:1.4px;
+    font-size:11px;
+    font-weight:700;
+}
+
+.prescription-text h2{
+    color:#092f4d;
+    font-size:35px;
+    line-height:1.15;
+    margin:8px 0 15px;
+}
+
+.prescription-text p{
+    color:#718086;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.prescription-list{
+    display:grid;
+    gap:8px;
+}
+
+.prescription-list div{
+    color:#17384e;
+    font-size:13px;
+    font-weight:600;
+}
+
+.upload-card{
+    background:#092f4d;
+    color:#fff;
+    padding:38px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.upload-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 15px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#087653;
+    border-radius:16px;
+
+    font-size:28px;
+}
+
+.upload-card h3{
+    font-size:22px;
+    margin-bottom:7px;
+}
+
+.upload-card p{
+    color:#d9e4e9;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+.upload-btn{
+    display:block;
+    width:100%;
+    background:#fff;
+    color:#087653;
+
+    padding:13px;
+    border-radius:8px;
+
+    font-size:13px;
+    font-weight:700;
+}
+
+
+/* ================= HOW IT WORKS ================= */
+
+.how-section{
+    background:#fff;
 }
 
 .how-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
 
-    background:#fff;
-
-    border:1px solid #e2ebe8;
+    border:1px solid #e0e9e6;
     border-radius:15px;
-
     overflow:hidden;
 }
 
 .step{
     text-align:center;
-    padding:30px 15px;
-    border-right:1px solid #e2ebe8;
+    padding:28px 15px;
+    border-right:1px solid #e0e9e6;
 }
 
 .step:last-child{
@@ -482,16 +552,15 @@ header{
 }
 
 .step-icon{
-    width:50px;
-    height:50px;
+    width:48px;
+    height:48px;
+    margin:0 auto 13px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    margin:0 auto 14px;
-
-    background:#e9f6f2;
+    background:#eaf7f3;
     border-radius:50%;
 
     font-size:20px;
@@ -500,76 +569,118 @@ header{
 .step h3{
     color:#17384e;
     font-size:13px;
-    margin-bottom:7px;
+    margin-bottom:5px;
 }
 
 .step p{
-    color:#7b878b;
-    font-size:11px;
-    line-height:1.5;
+    color:#7b878c;
+    font-size:10px;
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= CONTACT ================= */
+
+.contact-section{
+    background:#f6faf9;
+    padding-top:70px;
+}
+
+.contact-box{
+    max-width:1000px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-card{
+    background:#fff;
+    border:1px solid #e0e9e6;
+    border-radius:16px;
+    padding:30px;
+}
+
+.contact-card h3{
+    color:#092f4d;
+    font-size:21px;
+    margin-bottom:18px;
+}
+
+.contact-card p{
+    color:#718086;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.contact-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.contact-buttons .btn{
+    width:100%;
+}
+
+
+/* ================= FOOTER ================= */
 
 footer{
-    background:#087653;
+    background:#092f4d;
     color:#fff;
-    padding:28px 0;
+    padding:35px 20px;
     text-align:center;
 }
 
-footer p{
-    font-size:12px;
+.footer-logo{
+    font-size:21px;
+    font-weight:800;
+}
+
+.footer-sub{
+    color:#c8d6de;
+    font-size:11px;
+    margin-top:3px;
+}
+
+.footer-copy{
+    color:#c8d6de;
+    font-size:10px;
+    margin-top:15px;
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* ================= MOBILE ================= */
 
-@media(max-width:800px){
-
-    .container{
-        width:92%;
-    }
-
-    header{
-        position:sticky;
-        top:0;
-    }
+@media(max-width:900px){
 
     .navbar{
+        padding:11px 18px;
         min-height:70px;
-        gap:10px;
     }
 
     .menu-btn{
         display:block;
         order:1;
-        width:40px;
+        margin-right:10px;
     }
 
     .logo-area{
         order:2;
-        margin-right:auto;
-        gap:7px;
     }
 
-    .logo-area img{
-        width:43px;
-        height:43px;
+    .logo-image{
+        width:46px;
+        height:46px;
     }
 
     .logo-text h1{
-        font-size:19px;
+        font-size:20px;
     }
 
     .logo-text p{
         font-size:8px;
-        margin-top:2px;
     }
 
     .nav-links{
@@ -582,15 +693,13 @@ footer p{
         width:100%;
 
         background:#fff;
+        box-shadow:0 8px 25px rgba(0,0,0,.12);
 
         flex-direction:column;
         align-items:stretch;
 
         gap:0;
-
-        padding:8px 0;
-
-        box-shadow:0 8px 20px rgba(0,0,0,.10);
+        padding:7px 0;
     }
 
     .nav-links.active{
@@ -598,30 +707,47 @@ footer p{
     }
 
     .nav-links a{
-        padding:15px 25px;
+        padding:14px 22px;
         border-bottom:1px solid #edf1f0;
     }
 
     .nav-links .call-btn{
-        margin:10px 20px;
+        margin:10px 18px;
         text-align:center;
     }
 
-    /* SEARCH */
 
-    .search-area{
-        padding:13px 0;
+    /* HERO */
+
+    .hero{
+        padding:45px 20px;
     }
 
-    .search-box{
-        height:50px;
-        padding-left:18px;
+    .hero-container{
+        grid-template-columns:1fr;
+        gap:32px;
     }
 
-    .search-btn{
-        width:38px;
-        height:38px;
+    .hero h2{
+        font-size:40px;
     }
+
+    .hero-description{
+        font-size:14px;
+    }
+
+    .hero-visual{
+        order:2;
+    }
+
+    .hero-visual img{
+        width:100%;
+        max-width:100%;
+        height:auto;
+        object-fit:contain;
+        border-radius:17px;
+    }
+
 
     /* TRUST */
 
@@ -630,85 +756,40 @@ footer p{
     }
 
     .trust-item{
-        padding:14px 6px;
-        border-bottom:1px solid #e8eeee;
+        border-bottom:1px solid #e5ecea;
     }
 
     .trust-item:nth-child(2){
         border-right:0;
     }
 
-    /* HERO */
-
-    .hero{
-        padding:38px 0;
-    }
-
-    .hero-content{
-        grid-template-columns:1fr;
-        gap:28px;
-    }
-
-    .hero h2{
-        font-size:40px;
-        letter-spacing:-.5px;
-    }
-
-    .hero p{
-        font-size:14px;
-    }
-
-    .hero-image{
-        order:2;
-    }
-
-    .hero-image img{
-        width:100%;
-        max-width:100%;
-        height:auto;
-        object-fit:contain;
-        border-radius:16px;
-    }
-
-    .hero-buttons{
-        width:100%;
-    }
-
-    .btn{
-        flex:1;
-        min-width:100px;
-        padding:12px 9px;
-        font-size:12px;
-    }
 
     /* BENEFITS */
 
     .benefits{
         grid-template-columns:repeat(2,1fr);
-        margin:25px auto 45px;
+        margin:25px 18px 50px;
     }
 
     .benefit{
-        padding:17px 6px;
-        border-bottom:1px solid #e2ebe8;
+        border-bottom:1px solid #e0e9e6;
     }
 
     .benefit:nth-child(2){
         border-right:0;
     }
 
+
     /* CATEGORIES */
 
-    .categories{
+    .section{
+        padding-left:20px;
+        padding-right:20px;
         padding-bottom:55px;
     }
 
-    .section-heading h2{
-        font-size:25px;
-    }
-
-    .section-heading p{
-        font-size:11px;
+    .section-title h2{
+        font-size:27px;
     }
 
     .category-grid{
@@ -717,75 +798,73 @@ footer p{
     }
 
     .category-card{
-        min-height:150px;
         padding:19px 14px;
+        min-height:150px;
     }
 
-    .category-icon{
-        width:40px;
-        height:40px;
-        font-size:20px;
-        margin-bottom:13px;
+
+    /* PRESCRIPTION */
+
+    .prescription-section{
+        padding:55px 20px;
     }
 
-    .category-card h3{
-        font-size:13px;
+    .prescription-container{
+        grid-template-columns:1fr;
+        gap:25px;
     }
 
-    .category-card p{
-        font-size:10px;
+    .prescription-text h2{
+        font-size:29px;
     }
+
 
     /* HOW */
-
-    .how{
-        padding:45px 0 55px;
-    }
 
     .how-grid{
         grid-template-columns:1fr 1fr;
     }
 
     .step{
-        padding:25px 10px;
-        border-bottom:1px solid #e2ebe8;
+        border-bottom:1px solid #e0e9e6;
     }
 
     .step:nth-child(2){
         border-right:0;
     }
 
-    .step-icon{
-        width:44px;
-        height:44px;
+
+    /* CONTACT */
+
+    .contact-section{
+        padding-top:55px;
     }
+
+    .contact-box{
+        grid-template-columns:1fr;
+    }
+
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+/* ================= SMALL MOBILE ================= */
 
-@media(max-width:450px){
+@media(max-width:500px){
 
     .logo-text h1{
         font-size:17px;
     }
 
     .hero h2{
-        font-size:36px;
+        font-size:35px;
     }
 
-    .hero p{
-        line-height:1.6;
+    .hero-buttons{
+        flex-direction:column;
     }
 
-    .category-grid{
-        gap:10px;
-    }
-
-    .category-card{
-        min-height:145px;
+    .hero-buttons .btn{
+        width:100%;
     }
 
     .category-card h3{
@@ -796,14 +875,24 @@ footer p{
         font-size:9px;
     }
 
-    .benefit{
-        font-size:10px;
+    .how-grid{
+        grid-template-columns:1fr 1fr;
     }
 
-    .benefit span{
+    .step{
+        padding:22px 8px;
+    }
+
+    .step h3{
+        font-size:11px;
+    }
+
+    .step p{
         font-size:9px;
     }
+
 }
+
 </style>
 </head>
 
@@ -811,26 +900,25 @@ footer p{
 <body>
 
 
-<!-- =========================
-     HEADER
-========================= -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
-<div class="container navbar">
+<nav class="navbar">
 
     <button
         class="menu-btn"
         id="menuBtn"
-        aria-label="Open Menu"
+        aria-label="Menu"
         aria-expanded="false">
         ☰
     </button>
 
 
-    <a href="#" class="logo-area">
+    <a href="#home" class="logo-area">
 
         <img
+            class="logo-image"
             src="nirala-logo-new.jpg.png"
             alt="Nirala Medicos Logo">
 
@@ -845,13 +933,13 @@ footer p{
     </a>
 
 
-    <nav class="nav-links" id="navMenu">
+    <div class="nav-links" id="navLinks">
 
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
 
         <a href="#categories">Medicines</a>
 
-        <a href="#">Prescription</a>
+        <a href="#prescription">Prescription</a>
 
         <a href="#how">How It Works</a>
 
@@ -863,48 +951,39 @@ footer p{
             Call Now
         </a>
 
-    </nav>
+    </div>
 
-</div>
+</nav>
 
 </header>
 
 
-<!-- =========================
-     MAIN SEARCH
-     ONLY ONE SEARCH BAR
-========================= -->
+<!-- ================= SEARCH ================= -->
 
-<section class="search-area">
+<section class="search-section">
 
-<div class="container">
+<div class="search-box">
 
-    <div class="search-box">
+    <span>🔍</span>
 
-        <input
-            type="text"
-            id="medicineSearch"
-            placeholder="Search medicines, health products..."
-            autocomplete="off">
+    <input
+        type="text"
+        id="medicineSearch"
+        placeholder="Search medicines, health products..."
+        autocomplete="off">
 
-        <button
-            class="search-btn"
-            aria-label="Search">
-            🔍
-        </button>
-
-    </div>
+    <button
+        class="search-button"
+        type="button">
+        🔍
+    </button>
 
 </div>
 
 </section>
 
 
-<!-- =========================
-     TRUST BAR
-========================= -->
-
-<div class="container">
+<!-- ================= TRUST BAR ================= -->
 
 <div class="trust-bar">
 
@@ -915,34 +994,32 @@ footer p{
 
     <div class="trust-item">
         <strong>▣ Secure Packaging</strong>
-        <span>Safe & discreet delivery</span>
+        <span>Safe & discreet</span>
     </div>
 
     <div class="trust-item">
-        <strong>◷ On-time Delivery</strong>
-        <span>Quick & reliable</span>
+        <strong>◷ Reliable Delivery</strong>
+        <span>Convenient service</span>
     </div>
 
     <div class="trust-item">
-        <strong>▤ Safe & Secure Payments</strong>
-        <span>Multiple payment options</span>
+        <strong>☎ Customer Support</strong>
+        <span>We're here for you</span>
     </div>
 
 </div>
 
-</div>
+
+<!-- ================= HERO ================= -->
+
+<section
+    class="hero"
+    id="home">
+
+<div class="hero-container">
 
 
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero">
-
-<div class="container hero-content">
-
-
-    <div class="hero-text">
+    <div>
 
         <div class="badge">
             ✓ Genuine Allopathic Medicines
@@ -955,10 +1032,12 @@ footer p{
         </h2>
 
 
-        <p>
-            Genuine medicines, healthcare essentials and
-            personal care products — delivered safely to
-            your door, wherever you are.
+        <p class="hero-description">
+
+            Genuine medicines, healthcare essentials
+            and personal care products — with convenient
+            ordering and reliable delivery options.
+
         </p>
 
 
@@ -966,23 +1045,25 @@ footer p{
 
             <a
                 href="tel:+918445904979"
-                class="btn btn-primary">
+                class="btn btn-green">
                 ☎ Call Now
             </a>
 
 
             <a
                 href="https://wa.me/918445904979"
-                class="btn btn-whatsapp"
-                target="_blank">
-                WhatsApp
+                target="_blank"
+                rel="noopener"
+                class="btn btn-blue">
+                💬 WhatsApp
             </a>
 
 
             <a
-                href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur+Uttar+Pradesh"
-                class="btn btn-outline"
-                target="_blank">
+                href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline">
                 📍 Get Directions
             </a>
 
@@ -991,9 +1072,9 @@ footer p{
     </div>
 
 
-    <!-- FULL COVER PHOTO -->
+    <!-- FULL IMAGE — NO CROP -->
 
-    <div class="hero-image">
+    <div class="hero-visual">
 
         <img
             src="nirala-cover-new.jpg.png"
@@ -1007,402 +1088,479 @@ footer p{
 </section>
 
 
-<!-- =========================
-     BENEFITS
-========================= -->
-
-<div class="container">
+<!-- ================= BENEFITS ================= -->
 
 <div class="benefits">
 
-
     <div class="benefit">
         🚚 Fast & Reliable Delivery
-        <span>Quick service</span>
+        <small>Convenient service</small>
     </div>
-
 
     <div class="benefit">
         📦 Discreet Packaging
-        <span>Safe & sealed</span>
+        <small>Safe & sealed</small>
     </div>
-
 
     <div class="benefit">
         👨‍⚕️ Trained Pharmacists
-        <span>Professional support</span>
+        <small>Professional support</small>
     </div>
-
 
     <div class="benefit">
-        ↻ Easy Returns
-        <span>Support when needed</span>
+        ↻ Easy Support
+        <small>Customer assistance</small>
     </div>
-
 
     <div class="benefit">
         ☎ Customer Care
-        <span>We're here for you</span>
+        <small>We're here for you</small>
+    </div>
+
+</div>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section
+    class="section"
+    id="categories">
+
+<div class="section-title">
+
+    <h2>Shop by Category</h2>
+
+    <p>
+        Explore medicines and healthcare essentials.
+    </p>
+
+</div>
+
+
+<div class="category-grid">
+
+
+    <div class="category-card">
+
+        <div class="category-icon">💊</div>
+
+        <h3>Allopathic Medicines</h3>
+
+        <p>
+            Tablets, capsules, syrups and genuine
+            allopathic medicines.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">📋</div>
+
+        <h3>Prescription Medicines</h3>
+
+        <p>
+            Prescription medicines subject to
+            applicable requirements.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">💊</div>
+
+        <h3>OTC Medicines</h3>
+
+        <p>
+            Common over-the-counter pharmacy
+            products and essentials.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">🏥</div>
+
+        <h3>Healthcare Essentials</h3>
+
+        <p>
+            Everyday healthcare and pharmacy
+            essentials.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">🧴</div>
+
+        <h3>Personal Care</h3>
+
+        <p>
+            Personal care and daily-use
+            healthcare products.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">🌿</div>
+
+        <h3>Wellness Products</h3>
+
+        <p>
+            Selected wellness and healthcare
+            support products.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">🩹</div>
+
+        <h3>First Aid Essentials</h3>
+
+        <p>
+            Basic first-aid and healthcare
+            essentials.
+        </p>
+
+    </div>
+
+
+    <div class="category-card">
+
+        <div class="category-icon">🏪</div>
+
+        <h3>Pharmacy Products</h3>
+
+        <p>
+            Useful pharmacy and healthcare
+            products.
+        </p>
+
     </div>
 
 
 </div>
 
-</div>
+</section>
 
 
-<!-- =========================
-     SHOP BY CATEGORY
-     ONLY 8 CATEGORIES
-========================= -->
+<!-- ================= PRESCRIPTION ================= -->
 
 <section
-    class="categories"
-    id="categories">
+    class="prescription-section"
+    id="prescription">
 
-<div class="container">
+<div class="prescription-container">
 
 
-    <div class="section-heading">
+    <div class="prescription-text">
 
-        <div>
-
-            <h2>Shop by Category</h2>
-
-            <p>
-                Explore medicines and healthcare essentials.
-            </p>
-
+        <div class="small">
+            Prescription Service
         </div>
 
 
+        <h2>
+            Upload Your Prescription
+        </h2>
+
+
+        <p>
+            Have a prescription? Submit it to
+            Nirala Medicos and contact us for
+            medicine availability and order
+            assistance.
+        </p>
+
+
+        <div class="prescription-list">
+
+            <div>✓ Upload a clear prescription</div>
+
+            <div>✓ Include your contact details</div>
+
+            <div>✓ Our pharmacy team can review the request</div>
+
+            <div>
+                ✓ Prescription medicines are subject
+                to applicable requirements
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="upload-card">
+
+        <div class="upload-icon">
+            📄
+        </div>
+
+
+        <h3>
+            Send Prescription
+        </h3>
+
+
+        <p>
+            Submit your prescription through
+            our online form.
+        </p>
+
+
+        <!-- GOOGLE FORM -->
+
         <a
-            href="#categories"
-            class="view-all">
-            View All →
+            class="upload-btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScxLF5r_SqmS8jkA7ihqsZ5jsJT3bBhFWNjGGnQrR9LFib06w/viewform?usp=publish-editor"
+            target="_blank"
+            rel="noopener">
+            📤 Upload Prescription
         </a>
 
     </div>
 
 
-    <div class="category-grid">
-
-
-        <!-- 1 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                💊
-            </div>
-
-            <h3>
-                Allopathic Medicines
-            </h3>
-
-            <p>
-                Tablets, capsules, syrups and genuine
-                allopathic medicines.
-            </p>
-
-        </div>
-
-
-        <!-- 2 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                📋
-            </div>
-
-            <h3>
-                Prescription Medicines
-            </h3>
-
-            <p>
-                Prescription medicines subject to
-                applicable requirements.
-            </p>
-
-        </div>
-
-
-        <!-- 3 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                💊
-            </div>
-
-            <h3>
-                OTC Medicines
-            </h3>
-
-            <p>
-                Common over-the-counter pharmacy
-                products and essentials.
-            </p>
-
-        </div>
-
-
-        <!-- 4 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🏥
-            </div>
-
-            <h3>
-                Healthcare Essentials
-            </h3>
-
-            <p>
-                Everyday healthcare and pharmacy
-                essentials.
-            </p>
-
-        </div>
-
-
-        <!-- 5 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🧴
-            </div>
-
-            <h3>
-                Personal Care
-            </h3>
-
-            <p>
-                Personal care and daily-use
-                healthcare products.
-            </p>
-
-        </div>
-
-
-        <!-- 6 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🌿
-            </div>
-
-            <h3>
-                Wellness Products
-            </h3>
-
-            <p>
-                Selected wellness and healthcare
-                support products.
-            </p>
-
-        </div>
-
-
-        <!-- 7 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🩹
-            </div>
-
-            <h3>
-                First Aid Essentials
-            </h3>
-
-            <p>
-                Basic first-aid and emergency
-                healthcare essentials.
-            </p>
-
-        </div>
-
-
-        <!-- 8 -->
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🏪
-            </div>
-
-            <h3>
-                Pharmacy Products
-            </h3>
-
-            <p>
-                Useful pharmacy and healthcare
-                products.
-            </p>
-
-        </div>
-
-
-    </div>
-
 </div>
 
 </section>
 
 
-<!-- =========================
-     HOW IT WORKS
-========================= -->
+<!-- ================= HOW IT WORKS ================= -->
 
 <section
-    class="how"
+    class="section how-section"
     id="how">
 
-<div class="container">
+<div class="section-title">
 
-
-    <div class="section-heading">
-
-        <div>
-
-            <h2>How It Works</h2>
-
-            <p>
-                Simple steps to request your medicines.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="how-grid">
-
-
-        <div class="step">
-
-            <div class="step-icon">
-                🔍
-            </div>
-
-            <h3>
-                1. Search / Upload
-            </h3>
-
-            <p>
-                Find medicines or upload your prescription.
-            </p>
-
-        </div>
-
-
-        <div class="step">
-
-            <div class="step-icon">
-                🛍️
-            </div>
-
-            <h3>
-                2. Place Your Order
-            </h3>
-
-            <p>
-                Contact us and confirm your requirement.
-            </p>
-
-        </div>
-
-
-        <div class="step">
-
-            <div class="step-icon">
-                📦
-            </div>
-
-            <h3>
-                3. Packed with Care
-            </h3>
-
-            <p>
-                Secure, sealed and carefully packaged.
-            </p>
-
-        </div>
-
-
-        <div class="step">
-
-            <div class="step-icon">
-                🏠
-            </div>
-
-            <h3>
-                4. Delivered to You
-            </h3>
-
-            <p>
-                Delivery options depend on location
-                and availability.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer id="contact">
-
-<div class="container">
+    <h2>How It Works</h2>
 
     <p>
-        © 2026 Nirala Medicos. All Rights Reserved.
+        Simple steps to request your medicines.
     </p>
 
 </div>
 
+
+<div class="how-grid">
+
+
+    <div class="step">
+
+        <div class="step-icon">
+            🔍
+        </div>
+
+        <h3>
+            1. Search / Upload
+        </h3>
+
+        <p>
+            Find medicines or upload your prescription.
+        </p>
+
+    </div>
+
+
+    <div class="step">
+
+        <div class="step-icon">
+            🛍️
+        </div>
+
+        <h3>
+            2. Contact Us
+        </h3>
+
+        <p>
+            Confirm your medicine requirement.
+        </p>
+
+    </div>
+
+
+    <div class="step">
+
+        <div class="step-icon">
+            📦
+        </div>
+
+        <h3>
+            3. Packed with Care
+        </h3>
+
+        <p>
+            Medicines are packed carefully.
+        </p>
+
+    </div>
+
+
+    <div class="step">
+
+        <div class="step-icon">
+            🏠
+        </div>
+
+        <h3>
+            4. Delivery
+        </h3>
+
+        <p>
+            Delivery options depend on location
+            and availability.
+        </p>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section
+    class="contact-section section"
+    id="contact">
+
+<div class="contact-box">
+
+
+    <div class="contact-card">
+
+        <h3>
+            Nirala Medicos
+        </h3>
+
+        <p>
+            Mohalla Bahadurpura, Lodhipur Road,
+            Near Baba Sahab Petrol Pump,
+            Shahjahanpur, Uttar Pradesh – 242001
+        </p>
+
+        <p>
+            🕐 Daily: 8:00 AM – 10:00 PM
+        </p>
+
+        <p>
+            📞 8445904979
+        </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+        <h3>
+            Quick Contact
+        </h3>
+
+        <p>
+            Contact Nirala Medicos directly
+            for medicine availability and
+            order assistance.
+        </p>
+
+
+        <div class="contact-buttons">
+
+            <a
+                href="tel:+918445904979"
+                class="btn btn-green">
+                ☎ Call 8445904979
+            </a>
+
+
+            <a
+                href="https://wa.me/918445904979"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-blue">
+                💬 Chat on WhatsApp
+            </a>
+
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Nirala+Medicos+Shahjahanpur"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline">
+                📍 Open in Google Maps
+            </a>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        Nirala Medicos
+    </div>
+
+    <div class="footer-sub">
+        Trusted Pharmacy in Shahjahanpur
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Nirala Medicos. All Rights Reserved.
+    </div>
+
 </footer>
 
 
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
 /* MOBILE MENU */
 
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const navLinks =
+    document.getElementById("navLinks");
 
 
 menuBtn.addEventListener("click", function(){
 
-    navMenu.classList.toggle("active");
+    navLinks.classList.toggle("active");
 
-    const isOpen =
-        navMenu.classList.contains("active");
+    const open =
+        navLinks.classList.contains("active");
 
     menuBtn.setAttribute(
         "aria-expanded",
-        isOpen
+        open
     );
 
     menuBtn.textContent =
-        isOpen ? "✕" : "☰";
+        open ? "✕" : "☰";
 
 });
 
@@ -1413,11 +1571,11 @@ document
 .querySelectorAll(".nav-links a")
 .forEach(function(link){
 
-    link.addEventListener("click", function(){
+    link.addEventListener("click",function(){
 
-        navMenu.classList.remove("active");
+        navLinks.classList.remove("active");
 
-        menuBtn.textContent = "☰";
+        menuBtn.textContent="☰";
 
         menuBtn.setAttribute(
             "aria-expanded",
@@ -1430,12 +1588,15 @@ document
 
 
 /*
-   SEARCH PLACEHOLDER
+    MEDICINE SEARCH
 
-   Database abhi connected nahi hai.
-   Isliye search ko abhi empty rakha gaya hai.
-   Medicines database add hone par
-   yahin autocomplete/suggestions connect honge.
+    Abhi database connect nahi hai.
+    Isliye specific medicine names
+    yahan nahi daale gaye.
+
+    Future me database connect hone par
+    isi search bar me medicine suggestions
+    aa sakengi.
 */
 
 const searchInput =
@@ -1448,12 +1609,6 @@ searchInput.addEventListener(
         if(event.key === "Enter"){
 
             event.preventDefault();
-
-            /*
-              Future:
-              Medicine database search
-              yahan connect hoga.
-            */
 
         }
 
